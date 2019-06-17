@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojinal_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojinal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6g-vJ-sBS">
+                                <rect key="frame" x="120" y="94" width="174" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iki-Ev-URF">
+                                <rect key="frame" x="133" y="165" width="148" height="160"/>
+                                <state key="normal" image="TearsOfJoy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMb-E9-36r">
+                                <rect key="frame" x="133" y="355" width="148" height="160"/>
+                                <state key="normal" image="UpsideDownFace"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="120" id="0Bl-pN-udb"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="25" id="0za-bb-4hV"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="38" id="3Bp-h0-0Rt"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="50" id="3YU-oo-kDi"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="120" id="A49-Om-GfB"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="50" id="A4t-Fe-7KO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6g-vJ-sBS" secondAttribute="trailing" constant="120" id="BgR-Ws-Vif"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="150" id="Cvx-Cy-e9I"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="50" id="FZR-kk-6lk"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="FgF-44-oNG"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LrS-MZ-D8v"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="75" id="MFt-8d-3eI"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="ONh-na-PHV"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="150" id="P7r-JG-jm3"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="150" id="Q0X-tG-vS1"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="50" id="QpL-QK-ez7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6g-vJ-sBS" secondAttribute="trailing" constant="133" id="RxI-tf-igc"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="firstBaseline" secondItem="L6g-vJ-sBS" secondAttribute="baseline" constant="19" symbolType="layoutAnchor" id="WrX-9U-CU8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iki-Ev-URF" secondAttribute="trailing" constant="133" id="XfF-2h-6J7"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="afD-1Q-vRW"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="bv5-VG-5Fs"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="30" id="egK-Y9-atS"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="120" id="g9F-4G-oYf"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="50" id="h2V-f8-RIz"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="70" id="hEo-KF-TIj"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="hpI-6O-tWi"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="150" id="huA-FS-fwt"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="150" id="jTs-ia-FKN"/>
+                            <constraint firstItem="L6g-vJ-sBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="mX9-NI-Xf6"/>
+                            <constraint firstItem="Iki-Ev-URF" firstAttribute="top" secondItem="L6g-vJ-sBS" secondAttribute="bottom" constant="120" id="noh-VP-Ff4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6g-vJ-sBS" secondAttribute="trailing" constant="120" id="rlg-JS-gft"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="thN-vf-rOs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uMb-E9-36r" secondAttribute="trailing" constant="133" id="tme-MM-6Ub"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="150" id="wTz-l2-ngF"/>
+                            <constraint firstItem="uMb-E9-36r" firstAttribute="top" secondItem="Iki-Ev-URF" secondAttribute="bottom" constant="30" id="zyA-VO-O2R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TearsOfJoy" width="160" height="160"/>
+        <image name="UpsideDownFace" width="160" height="160"/>
+    </resources>
 </document>
