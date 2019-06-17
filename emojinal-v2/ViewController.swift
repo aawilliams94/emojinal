@@ -47,4 +47,4 @@ class ViewController: UIViewController {
     }
 }
 
-
+//Final Comment to say something is up with my github, but I don't really know what's happening there. I do know that between iteration 2 and 3, some crazy stuff started happening so I went to github and copied my old iteration 2 code, then I just deleted all of my emojis. So in a weird fit of frustration, I rebuilt my app in like 10 minutes after trying to be an overachiever.
