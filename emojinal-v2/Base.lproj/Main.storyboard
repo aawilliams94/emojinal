@@ -27,15 +27,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7E-Ag-vIN">
                                 <rect key="frame" x="127" y="214" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="TearsOfJoy"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="145"/>
+                                <state key="normal" title="😂"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxS-Pm-IEe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-eO-YdF">
-                                <rect key="frame" x="127" y="481" width="160" height="160"/>
+                                <rect key="frame" x="129" y="427" width="157" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="UpsideDownFace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="145"/>
+                                <state key="normal" title="🙃"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sb-YA-A2b"/>
                                 </connections>
@@ -61,8 +63,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="TearsOfJoy" width="160" height="160"/>
-        <image name="UpsideDownFace" width="160" height="160"/>
-    </resources>
 </document>
