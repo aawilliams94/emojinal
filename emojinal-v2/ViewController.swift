@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func showMessage(sender: UIButton) {
+        
         //create the alert
-        let tojAlert =  UIAlertController (title: "Wanna hear a joke?", message: "Time flies like an arrow, fruit flies like banana.", preferredStyle: UIAlertController.Style.alert)
+        let tojAlert =  UIAlertController (title: "I'm so emojinal!!", message: "Like really emojinal", preferredStyle: UIAlertController.Style.alert)
         //adding the buttons
         tojAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         
